@@ -1,4 +1,5 @@
 # todos_controller.rb
+
 class TodosController < ApplicationController
   def index
     #render plain: Todo.all.to_a
@@ -13,4 +14,19 @@ class TodosController < ApplicationController
     render plain: todo.to_pleasent_string
   end
 
+  def create
+    #render plain: "Hey, this is create action!"
+    #render plain: "Hey, Our Params are: #{params.to_s} "
+    todo_text = params[:todo_text]
+    #due_date = params[:due_date]
+    due_date = DateTime.parse(params[:due_date])
+
+    new_todo = Todo.create!(
+      todo_text: todo_text,
+      due_date: due_date,
+      completed: false
+    )
+    response_text = "Hey new todo is created with id #{new_todo.id}"
+    render plain: response_text
+  end
 end
