@@ -32,13 +32,12 @@ class UsersController < ApplicationController
     render plain: response_text
   end
 
-  # def update
-  #   id = params[:id]
-  #   completed = params[:completed]
-  #   todo = Todo.find(id)
-  #   todo.completed = completed;
-  #   todo.save!
-  #   render plain: "Updates todo completed stutus to #{completed}"
-  # end
+  def login
+    email = params[:email]
+    password = params[:password]
+    user = User.find_by(email: email, password: password)
+    response_text = (user == nil) ? false : true
+    render plain: response_text
+  end
 
 end
