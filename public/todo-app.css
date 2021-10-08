@@ -5,13 +5,13 @@
   margin-top: 80px;
   color: #453c52;
 }
-.TodoPage-title {
+.TodoPage__Title {
   font-family: OpenSans-Semibold;
   font-size: 20px;
   color: #453c52;
   letter-spacing: 0.14px;
 }
-.TodoSection-title {
+.TodoSection__Title {
   margin-top: 15px;
   font-size: 34px;
   line-height: 1.4;
@@ -22,13 +22,13 @@
 
 } */
 
-.AddTodo-text {
+.AddTodo__Text {
   font-family: OpenSans;
   font-size: 14px;
   color: #726a7e;
   letter-spacing: 0.1px;
 }
-.AddTodo-date {
+.AddTodo__Date {
   background: #ffffff;
   border: 1px solid #bfb8cc;
   border-radius: 4px;
@@ -36,7 +36,7 @@
   color: #453c52;
 }
 
-.AddTodo-button {
+.AddTodo__Button {
   background: #48bb78;
   border-radius: 4px;
 }
@@ -47,13 +47,13 @@
 .TodoSectionTitle {
   display: flex;
 }
-.TodoSectionTitle-text {
+.TodoSectionTitle__Text {
   font-family: OpenSans-Semibold;
   font-size: 14px;
   color: #453c52;
   letter-spacing: 0.1px;
 }
-.TodoSectionTitle-remainingcount {
+.TodoSectionTitle__RemainingCount {
   font-family: OpenSans;
   font-size: 10px;
   color: #453c52;
@@ -65,20 +65,20 @@
 .TodoItem {
   margin-left: 10px;
 }
-.TodoItem-container {
+.TodoItem__Container {
   display: flex;
   font-family: OpenSans;
   font-size: 12px;
   color: #453c52;
   letter-spacing: 0.1px;
 }
-.TodoItem-checkbox {
+.TodoItem__Checkbox {
   background: #ffffff;
   border: 1px solid #bfb8cc;
   border-radius: 4px;
   border-radius: 4px;
 }
-.TodoItem-overduelabel {
+.TodoItem__Overduelabel {
   font-family: OpenSans;
   font-size: 10px;
   color: #c53030;
@@ -86,18 +86,32 @@
   margin-left: 5px;
   margin-top: 4px;
 }
-.TodoItem-text {
+.TodoItem__Text {
   margin-top: 3px;
 }
-.TodoItem-delete {
+.TodoItem__Delete {
   /* <border: 1px solid #453C52; */
   margin-left: 5px;
   margin-top: 3px;
 }
 
-.TodoItem-duemonth {
+.TodoItem__Duemonth {
   font-size: 10px;
   letter-spacing: 0.09px;
   margin-left: 5px;
-  margin-top: 5px;
+  margin-top: 5px;`
+}
+
+.TodoItem:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.TodoItem__DeleteButton {
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.TodoItem:hover .TodoItem__DeleteButton {
+  visibility: visible;
 }

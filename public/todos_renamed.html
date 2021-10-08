@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Management App</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="todo-app.css">
+</head>
+<body>
+  <main class="TodoPageMain">
+    <article>
+      <h1 class="TodoPage__title">My Todo list</h1>
+      <section class="AddTodo">
+        <input class="AddTodo__Text" type="text" placeholder="Whats Next?">
+        <input class="AddTodo__Date" type="date" >
+        <input class="AddTodo__Button" type="button" placeholder="Add" value="Add">
+      </section>
+
+      <section class="TodoSection">
+        <div class="TodoSectionTitle">
+          <p class="TodoSectionTitle__Text">Due Today</h2>
+          <p class="TodoSectionTitle__RemainingCount">0/4</h2>
+        </div>
+        <ul>
+          <li class="TodoItem">
+            <label class="TodoItem__Container">
+              <input class="TodoItem__Checkbox" type="checkbox">
+              <p class="TodoItem__Text" > Submit SaaS 201 Project  </p>
+              <p class="TodoItem__OverdueLabel"> Overdue </p>
+              <a class="TodoItem__DeleteButton" href="javascript:void(0)"> <img src="bin.ico" width=10px> </a>
+
+			      </label>
+		      </li>
+          <li class="TodoItem">
+            <label class="TodoItem__Container">
+              <input class="TodoItem__Checkbox" type="checkbox">
+              <p class="TodoItem__Text" >Call accountant </p>
+              <a class="TodoItem__DeleteButton" href="javascript:void(0)"> <img src="bin.ico" width=10px> </a>
+			      </label>
+		      </li>
+        </ul>
+      </section>
+
+      <section class="TodoSection">
+        <div class="TodoSectionTitle">
+          <p class="TodoSectionTitle__Text">Due Tomorrow</h2>
+          <p class="TodoSectionTitle__RemainingCount">0/3</h2>
+        </div>
+        <ul>
+          <li class="TodoItem">
+            <label class="TodoItem__Container">
+              <input class="TodoItem__Checkbox" type="checkbox">
+              <p class="TodoItem__Text" > Refill groceries </p>
+              <a class="TodoItem__DeleteButton" href="javascript:void(0)"> <img src="bin.ico" width=10px> </a>
+			      </label>
+		      </li>
+        </ul>
+      </section>
+
+      <section class="TodoSection">
+        <div class="TodoSectionTitle">
+          <p class="TodoSectionTitle__Text">Remaining</h2>
+          <p class="TodoSectionTitle__Remainingcount">0/3</h2>
+          <a class="TodoItem__DeleteButton" href="javascript:void(0)"> <img src="bin.ico" width=10px> </a>
+        </div>
+        <ul>
+          <li class="TodoItem">
+            <label class="TodoItem__Container">
+              <input class="TodoItem__Checkbox" type="checkbox">
+              <p class="TodoItem__Text" > Type Something </p>
+              <p class="TodoItem__Duemonth"> Jan 21</p>
+              <a class="TodoItem__DeleteButton" href="javascript:void(0)"> <img src="bin.ico" width=10px> </a>
+			      </label>
+		      </li>
+        </ul>
+        <ul>
+          <li class="TodoItem">
+            <label class="TodoItem__Container">
+              <input class="TodoItem__Checkbox" type="checkbox">
+              <p class="TodoItem__Text" > Type Something </p>
+              <p class="TodoItem__Duemonth"> Jan 22</p>
+              <a class="TodoItem__DeleteButton" href="javascript:void(0)"> <img src="bin.ico" width=10px> </a>
+			      </label>
+		      </li>
+        </ul>
+        <ul>
+          <li class="TodoItem">
+            <label class="TodoItem__Container">
+              <input class="TodoItem__Checkbox" type="checkbox">
+              <p class="TodoItem__Text" > Type Something </p>
+              <p class="TodoItem__Duemonth"> Jan 23</p>
+              <a class="TodoItem__DeleteButton" href="javascript:void(0)"> <img src="bin.ico" width=10px> </a>
+			      </label>
+		      </li>
+        </ul>
+      </section>
+
+    </article>
+  </main>
+</body>
+</html>
