@@ -5,4 +5,21 @@ class Todo <ActiveRecord::Base
     "#{id}. #{is_completed} #{todo_text}, #{due_date}"
   end
 
+  def self.overdue
+    all.where("due_date < ?", Date.today)
+  end
+
+  def self.duelater
+    all.where("due_date > ?", Date.today)
+  end
+
+  def self.duetoday
+    all.where("due_date == ?", Date.today)
+  end
+
+  def self.completed
+    all.where(completed: true)
+  end
+
+
 end
