@@ -14,7 +14,7 @@ class Todo <ActiveRecord::Base
   end
 
   def self.duetoday
-    all.where("due_date == ?", Date.today)
+    all.where("due_date = ?", Date.today)
   end
 
   def self.completed
