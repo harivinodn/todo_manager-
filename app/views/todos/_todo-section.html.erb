@@ -8,11 +8,9 @@
     <% todos.each do |todo| %>
       <li class="TodoItem">
         <label class="TodoItem__Container">
-          <input class="TodoItem__Checkbox" type="checkbox"
-          <% if todo.completed %>
-          checked
-          <% end %>
-          >
+
+          <input class="TodoItem__Checkbox" type="checkbox" <%= todo.completed ? "checked" : "" %>>
+
           <% if todo.completed %>
             <p class="TodoItem__StrikedText" > <%= todo.todo_text %> </p>
           <% else%>
