@@ -89,6 +89,10 @@
 .TodoItem__Text {
   margin-top: 3px;
 }
+.TodoItem__StrikedText {
+  margin-top: 3px;
+  text-decoration-line: line-through;
+}
 .TodoItem__Delete {
   /* <border: 1px solid #453C52; */
   margin-left: 5px;
