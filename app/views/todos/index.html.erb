@@ -2,11 +2,16 @@
   <main class="TodoPageMain">
     <article>
       <h1 class="TodoPage__title">My Todo list</h1>
-      <form class="AddTodo" action="/todos" method="POST">
+
+      <%# Evaluators please note: Below Comment is retained intentionaly %>
+      <%# <form class="AddTodo" action="/todos" method="POST"> %>
+      <%= form_with(url:"/todos", method: "post", class: "AddTodo" ) do %>
         <input class="AddTodo__Text" type="text" placeholder="Whats Next?" name="todo_text">
         <input class="AddTodo__Date" type="date" name="due_date">
         <input class="AddTodo__Button" type="submit" placeholder="Add" value="Add">
-      </form>
+      <% end %>
+      <%# </form> %>
+
 
       <%= render partial: "todo-section", locals: {section_title: "Overdue", todos: Todo.overdue, show_duedate: true } %>
       <%= render partial: "todo-section", locals: {section_title: "Due Today", todos: Todo.duetoday , show_duedate: false } %>
