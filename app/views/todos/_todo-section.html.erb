@@ -1,7 +1,9 @@
 <section class="TodoSection">
   <div class="TodoSectionTitle">
     <p class="TodoSectionTitle__Text"><%= section_title %> </p>
-    <p class="TodoSectionTitle__RemainingCount"> <%= todos.completed.count %>/<%= todos.count %> </p>
+    <p class="TodoSectionTitle__RemainingCount">
+      <%= todos.completed.count %>/<%= todos.count %>
+    </p>
   </div>
 
   <ul>
@@ -32,7 +34,7 @@
           <a class="TodoItem__DeleteButton" href="javascript:void(0)">
             <%= form_with(url:"/todos/#{todo.id}", method: "delete") do %>
               <%# <input type='image' src="/assets/bin.ico" width =10px> %>
-              <%= image_tag "bin.ico", height: 15  %>
+              <%= image_tag "bin.ico", height: 13  %>
             <% end %>
           </a>
 
