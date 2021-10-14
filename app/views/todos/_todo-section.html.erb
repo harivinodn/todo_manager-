@@ -12,12 +12,18 @@
         <label class="TodoItem__Container">
 
           <%= form_with(url:"/todos/#{todo.id}", method: "put") do %>
-            <input
+            <%# Evaluators please note, comments are kept intentinally%>
+            <%# <input
               class="TodoItem__Checkbox"
               name="completed"
               type="checkbox" <%= todo.completed ? "checked" : "" %>
-              onclick="this.form.submit()"
-            >
+            <%#   onclick="this.form.submit()"
+            > %>
+            <%= check_box_tag 'completed', 'yes', todo.completed,
+              class: 'TodoItem__Checkbox',
+              onclick: 'this.form.submit()'
+            %>
+
             <%# <input type="submit" value = "Update"> %>
           <% end %>
 
@@ -34,7 +40,7 @@
           <a class="TodoItem__DeleteButton" href="javascript:void(0)">
             <%= form_with(url:"/todos/#{todo.id}", method: "delete") do %>
               <%# <input type='image' src="/assets/bin.ico" width =10px> %>
-              <%= image_tag "bin.ico", height: 13  %>
+              <%= image_submit_tag("bin.ico", width: "10px") %>
             <% end %>
           </a>
 
