@@ -1,6 +1,6 @@
 require 'active_record'
 
-class User < ActiveRecord::Base
+class User < ApplicationRecord
 
   def to_pleasent_string
     "#{id}. #{name}, #{email}, #{password}"
