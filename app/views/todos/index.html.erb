@@ -13,7 +13,7 @@
       <%= form_with(url:"/todos", method: "post", class: "AddTodo" ) do |form| %>
         <%= form.text_field :todo_text, class:"AddTodo__Text", value:"Whats Next?"%>
         <%= form.date_field :due_date, class:"AddTodo__Date"  %>
-        <input class="AddTodo__Button" type="submit" placeholder="Add" value="Add">
+        <%= submit_tag "Add", class: "AddTodo__Button" %>
       <% end %>
 
       <%= render partial: "todo-section", locals: {
