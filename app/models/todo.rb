@@ -1,4 +1,8 @@
 class Todo <ActiveRecord::Base
+  belongs_to :user
+    # Below conditions need to met while writing above code
+    # Table called "users"
+    # todos table will contain "user_id"
 
   # def to_pleasent_string
   #   is_completed = completed ? "[X]" : "[ ]"
