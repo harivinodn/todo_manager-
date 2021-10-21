@@ -1,0 +1,30 @@
+.Users__new {
+}
+
+.Users__title {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.Form__section {
+  margin-bottom: 20px;
+}
+
+.Form__input {
+  padding: 8px;
+  font-size: 20px;
+}
+
+.FormInput__label {
+  color: #555555;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.Form__submit {
+  font-size: 20px;
+  padding: 10px;
+  background-color: #009900;
+  border: 0;
+  border-radius: 4px;
+}
