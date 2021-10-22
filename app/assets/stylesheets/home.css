@@ -1,0 +1,14 @@
+.Home_contents {
+  padding: 100px;
+}
+
+.Home__title {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.Home__authenticate {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: left;
+}

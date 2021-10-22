@@ -1,3 +1,12 @@
-<p>Welcome to the Todo Home Page </p>
+<div class="Home_contents">
 
-<p> If you are a new user, signup here </p>
+<p class="Home__title">Welcome to the Todo Home Page </p>
+
+<p class="Home__authenticate">
+  If you are a new user, <%= link_to "sign up here", new_user_path %>
+</p>
+<p class="Home__authenticate">
+  If you are an existing user, <%= link_to "sign-in here", new_sessions_path %>
+</p>
+
+</div>
