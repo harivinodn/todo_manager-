@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   get "/" => "home#index"
   post "users/login", to: "users#login"
-  resources :todos # creates seven different s
+  resources :todos # creates seven different resources
   resources :users
 
   # get "/signin" => "sessions#new", as: :sessions
