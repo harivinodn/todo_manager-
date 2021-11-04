@@ -5,10 +5,8 @@ Rails.application.routes.draw do
   resources :todos # creates seven different resources
   resources :users
 
-  # get "/signin" => "sessions#new", as: :sessions
-  # post "/signin" => "sessions#create", as: :sessions
-
   get "/signin" => "sessions#new", as: "new_sessions"
   post "/signin" => "sessions#create", as: "sessions"
+  delete "/signout" => "sessions#destroy", as: "destroy_session"
 
 end
