@@ -1,4 +1,9 @@
-.Users__new {
+.Users__addmain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  color: #453c52;
 }
 
 .Users__title {

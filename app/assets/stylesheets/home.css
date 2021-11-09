@@ -1,5 +1,9 @@
 .Home__contents {
   padding: 100px;
+
+  align-items: center;
+  justify-content: center;
+  color: #453c52;
 }
 
 .Home__title {
@@ -14,16 +18,22 @@
 }
 
 .User__Header {
+  display: flex;
   padding: 10px;
   background-color: lightgrey;
-  font-size: 14px;
-  margin-bottom: 10px;
-  display: flex;
+  font-size: 18px;
+  margin-top: 80px;
+  margin-left: 420px;
+  margin-right: 420px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .Flash__error {
   color: darkred;
+  margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 16px;
+  margin-left: 420px;
+  margin-right: 420px;
+  font-size: 12px;
 }

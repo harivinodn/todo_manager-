@@ -2,12 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 30px;
   color: #453c52;
 }
+
 .TodoPage__Title {
   font-family: OpenSans;
-  font-size: 36px;
+  font-size: 28px;
   color: #453c52;
   letter-spacing: 0.14px;
   margin-bottom: 10px;
@@ -15,13 +16,13 @@
 
 .AddTodo__Text {
   font-family: OpenSans;
-  font-size: 20px;
+  font-size: 16px;
   color: #726a7e;
   letter-spacing: 0.1px;
 }
 .AddTodo__Date {
   font-family: OpenSans;
-  font-size: 20px;
+  font-size: 16px;
   background: #ffffff;
   border: 1px solid #bfb8cc;
   border-radius: 4px;
@@ -33,7 +34,7 @@
   background: #48bb78;
   border-radius: 4px;
   font-family: OpenSans;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .TodoSection {
@@ -46,13 +47,13 @@
 }
 .TodoSectionTitle__Text {
   font-family: OpenSans-Semibold;
-  font-size: 28px;
+  font-size: 20px;
   color: #453c52;
   letter-spacing: 0.1px;
 }
 .TodoSectionTitle__RemainingCount {
   font-family: OpenSans;
-  font-size: 16px;
+  font-size: 12px;
   color: #453c52;
   letter-spacing: 0.09px;
   margin-left: 8px;
@@ -77,7 +78,7 @@
 }
 .TodoItem__OverdueLabel {
   font-family: OpenSans;
-  font-size: 10px;
+  font-size: 8px;
   color: #c53030;
   letter-spacing: 0.09px;
   margin-left: 5px;
@@ -85,13 +86,13 @@
 }
 .TodoItem__Text {
   font-family: OpenSans;
-  font-size: 24px;
-  margin-top: 0px;
+  font-size: 16px;
+  margin-top: 4px;
 }
 .TodoItem__StrikedText {
   font-family: OpenSans;
-  font-size: 24px;
-  margin-top: 0px;
+  font-size: 16px;
+  margin-top: 4px;
   text-decoration-line: line-through;
 }
 .TodoItem__Delete {
@@ -101,7 +102,7 @@
 }
 
 .TodoItem__Duemonth {
-  font-size: 16px;
+  font-size: 12px;
   letter-spacing: 0.09px;
   margin-left: 12px;
   margin-top: 6px;
