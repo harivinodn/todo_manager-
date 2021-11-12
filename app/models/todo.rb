@@ -1,4 +1,5 @@
 class Todo <ActiveRecord::Base
+
   validates :todo_text, presence: true
   validates :todo_text, length: {minimum: 2}
   validates :due_date, presence: true
@@ -8,10 +9,10 @@ class Todo <ActiveRecord::Base
     # Table called "users"
     # todos table will contain "user_id"
 
-  # def to_pleasent_string
-  #   is_completed = completed ? "[X]" : "[ ]"
-  #   "#{id}. #{is_completed} #{todo_text}, #{due_date}"
-  # end
+  def to_pleasent_string
+    is_completed = completed ? "[X]" : "[ ]"
+    "#{id}. #{is_completed} #{todo_text}, #{due_date}"
+  end
 
   def self.overdue
     where("due_date < ? and (not completed)", Date.today)
@@ -32,6 +33,5 @@ class Todo <ActiveRecord::Base
   def self.completed
     all.where(completed: true)
   end
-
 
 end

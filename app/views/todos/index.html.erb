@@ -1,7 +1,7 @@
 
   <main class="TodoPageMain">
     <article>
-      <h1 class="TodoPage__Title">Todo list</h1>
+      <h1 class="TodoPage__Title"> Todo list </h1>
 
       <%# Evaluators please note: Below Comment is retained intentionaly %>
       <%# <form class="AddTodo" action="/todos" method="POST"> %>
@@ -11,8 +11,14 @@
       <%# </form> %>
 
       <%= form_with(url:"/todos", method: "post", class: "AddTodo" ) do |form| %>
-        <%= form.text_field :todo_text, class:"AddTodo__Text", value:"Whats Next?"%>
-        <%= form.date_field :due_date, class:"AddTodo__Date"  %>
+        <%= form.text_field :todo_text,
+          class: "AddTodo__Text",
+          value: "Whats Next?",
+          autofocus: "autofocus"
+        %>
+        <%= form.date_field :due_date,
+          class: "AddTodo__Date"
+        %>
         <%= submit_tag "Add", class: "AddTodo__Button" %>
       <% end %>
 
@@ -20,17 +26,20 @@
         section_title: "Overdue",
         todos: @todos.overdue,
         show_duedate: true
-        } %>
+        }
+      %>
       <%= render partial: "todo-section", locals: {
         section_title: "Due Today",
         todos: @todos.duetoday,
         show_duedate: false
-        } %>
+        }
+      %>
       <%= render partial: "todo-section", locals: {
         section_title: "Due Later",
         todos: @todos.duelater,
         show_duedate: true
-        } %>
+        }
+      %>
 
     </article>
   </main>

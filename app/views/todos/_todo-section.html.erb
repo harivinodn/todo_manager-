@@ -1,6 +1,9 @@
 <section class="TodoSection">
+
   <div class="TodoSectionTitle">
-    <p class="TodoSectionTitle__Text"><%= section_title %> </p>
+    <p class="TodoSectionTitle__Text">
+      <%= section_title %>
+    </p>
     <p class="TodoSectionTitle__RemainingCount">
       <%= todos.completed.count %>/<%= todos.count %>
     </p>
@@ -19,22 +22,28 @@
               type="checkbox" <%= todo.completed ? "checked" : "" %>
             <%#   onclick="this.form.submit()"
             > %>
+            <%# <input type="submit" value = "Update"> %>
+
             <%= check_box_tag 'completed', 'yes', todo.completed,
               class: 'TodoItem__Checkbox',
               onclick: 'this.form.submit()'
             %>
-
-            <%# <input type="submit" value = "Update"> %>
           <% end %>
 
           <% if todo.completed %>
-            <p class="TodoItem__StrikedText" > <%= todo.todo_text %> </p>
+            <p class="TodoItem__StrikedText" >
+              <%= todo.todo_text %>
+            </p>
           <% else%>
-            <p class="TodoItem__Text" > <%= todo.todo_text %> </p>
+            <p class="TodoItem__Text" >
+              <%= todo.todo_text %>
+            </p>
           <% end %>
 
           <% if show_duedate %>
-            <p class="TodoItem__Duemonth"> <%= todo.due_date.to_s(:short) %> </p>
+            <p class="TodoItem__Duemonth">
+              <%= todo.due_date.to_s(:short) %>
+            </p>
           <% end %>
 
           <a class="TodoItem__DeleteButton" href="javascript:void(0)">

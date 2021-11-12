@@ -1,21 +1,21 @@
 <div class = "Users__addmain ">
 
-
-
   <section class="Users__new">
-    <p class="Users__title"> Sign-in</p>
+    <p class="Users__title"> Sign-in </p>
     <%= form_with url: sessions_path do |form| %>
-
-      <div class = "Form__section">
-        <p class = "FormInput__label" > Email id: </p>
-        <%= form.email_field :email, class: "Form__input" %>
+      <div class="Form__section">
+        <p class="FormInput__label"> Email id: </p>
+        <%= form.email_field :email,
+          class: "Form__input",
+          autofocus: "autofocus"
+        %>
       </div>
-      <div class = "Form__section">
-        <p class = "FormInput__label" >Password: </p>
+      <div class="Form__section">
+        <p class="FormInput__label"> Password: </p>
         <%= form.password_field :password, class: "Form__input" %>
       </div>
-      <div class = "Form__section">
-        <%= form.submit "Sign-in!", class: "Form__submit"%>
+      <div class="Form__section">
+        <%= form.submit "Sign-in!", class: "Form__submit" %>
       <div>
     <% end %>
   </section>
